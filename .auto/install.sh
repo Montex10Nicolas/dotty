@@ -3,6 +3,8 @@
 # Define the dotfiles directory
 DOTFILES_DIR="$HOME/dotfiles"
 
+echo "Make sure you want to search on $DOTFILES_DIR}"
+
 # Check if the stow command is available
 if ! command -v stow &> /dev/null
 then
@@ -22,7 +24,7 @@ for dir in "$DOTFILES_DIR"/*/; do
 
     # Run the stow command on the directory
     echo "Running stow on directory: $dir_name"
-    stow -n -t "$HOME" "$dir_name"
+    stow -t "$HOME" "$dir_name"
 
     # Check if the stow command was successful
     if [ $? -eq 0 ]; then
