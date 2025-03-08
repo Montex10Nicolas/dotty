@@ -1,0 +1,22 @@
+[user]
+	email = montexdev@protonmail.com
+	name = Nicolas10Montex
+[init]
+	defaultBranch = main
+[core]
+	editor = vim
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[pull]
+	rebase = true
+[rerere]
+	enabled = true
+[pager]
+	log = false
+	reflog = false
+	diff = false
+	branch = false
