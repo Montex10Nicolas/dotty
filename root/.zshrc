@@ -133,3 +133,5 @@ export NVM_DIR="$HOME/.nvm"
 
 source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
