@@ -1,1 +1,2 @@
-rclone copy -P /home/nicolas/Obsidian/ mega:Obsidian
+#!/bin/bash
+rclone copy -P $HOME/Obsidian/ mega:Obsidian
