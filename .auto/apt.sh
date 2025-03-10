@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo apt install neovim zsh
+sudo apt install neovim zsh git  gh
