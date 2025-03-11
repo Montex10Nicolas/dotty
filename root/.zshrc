@@ -24,6 +24,7 @@ alias auu="sudo apt update && sudo apt upgrade"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias grep="rg"
 alias ls="eza"
+alias find="fdfind"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -34,3 +35,5 @@ source $ZSH/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 export FLATPAK_DIR="/var/lib/flatpak/app"
+
+set -o vi
