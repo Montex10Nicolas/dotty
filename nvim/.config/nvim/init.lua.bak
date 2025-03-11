@@ -21,7 +21,6 @@ What is Kickstart?
    tchitVisualTextObject) - (or HTML version): https://neovim.io/doc/user/lua-guide.html
 
 Kickstart Guide:
-
   Once you've completed that, you can continue working through **AND READING** the rest
   of the kickstart init.lua.
 

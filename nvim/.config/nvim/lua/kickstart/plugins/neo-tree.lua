@@ -16,6 +16,7 @@ return {
   },
   opts = {
     filesystem = {
+      filetype = { 'yours' },
       window = {
         width = 30,
         mappings = {
@@ -24,4 +25,6 @@ return {
       },
     },
   },
+   config = function ()
+   end
 }
