@@ -43,3 +43,4 @@
 # resize-overlay-duration = 4s 200ms
 theme = "NightLion v2" 
 command = /usr/bin/zsh
+font-feature = -calt
