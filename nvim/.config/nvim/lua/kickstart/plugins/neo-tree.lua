@@ -16,15 +16,12 @@ return {
   },
   opts = {
     filesystem = {
-      filetype = { 'yours' },
       window = {
-        width = 30,
+        width = 35,
         mappings = {
           ['\\'] = 'close_window',
         },
       },
     },
   },
-   config = function ()
-   end
 }

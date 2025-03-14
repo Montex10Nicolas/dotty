@@ -24,7 +24,10 @@
 #
 # # Spacing around the equals sign does not matter.
 # # All of these are identical:
-# key=value
+keybind = ctrl+right=goto_split:right
+keybind = ctrl+left=goto_split:left
+keybind = ctrl+up=goto_split:up
+keybind = ctrl+down=goto_split:down
 # key= value
 # key =value
 # key = value
