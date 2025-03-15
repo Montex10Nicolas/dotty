@@ -1,6 +1,7 @@
 #!/bin/bash
 #
-sudo add-apt-repository ppa:neovim-ppa/unstable -y\nsudo apt update\nsudo apt install ma
-ke gcc ripgrep unzip git xclip neovim
+sudo add-apt-repository ppa:neovim-ppa/unstable -y
+sudo apt update
+sudo apt install make gcc ripgrep unzip xclip
 sudo apt install neovim
 
