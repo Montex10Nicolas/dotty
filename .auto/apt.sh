@@ -20,6 +20,7 @@ packageArray=(
   "ripgrep"
   "unzip"
   "xclip"
+  "pv"
   "vim"
 )
 
