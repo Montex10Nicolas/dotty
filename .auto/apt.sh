@@ -67,4 +67,7 @@ wget https://github.com/lutris/lutris/releases/download/v0.5.18/lutris_0.5.18_al
 sudo apt install ./lutris_0.5.18_all.deb -y
 rm -rf lutris_0.5.18_all.deb 
 
+# Show password as ***
+echo -e "Defaults\tpwfeedback" | sudo tee -a /etc/sudoers.d/0pwfeedback
+
 echo "Run 'nvm install node'"
