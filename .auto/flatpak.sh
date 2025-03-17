@@ -13,5 +13,6 @@ flatpak install -y org.telegram.desktop
 flatpak install -y io.missioncenter.MissionCenter
 flatpak install -y org.jellyfin.JellyfinServer
 flatpak install -y app.zen_browser.zen
+flatpak install -y com.valvesoftware.Steam
 
 echo "Make sure to reboot to change the update the system"
