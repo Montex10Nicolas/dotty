@@ -22,6 +22,7 @@ packageArray=(
   "xclip"
   "pv"
   "vim"
+  "solaar"
 )
 
 packages=""

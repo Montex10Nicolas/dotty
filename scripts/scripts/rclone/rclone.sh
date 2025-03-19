@@ -1,2 +1,3 @@
 #!/bin/bash
-bash /home/nicolas/scripts/rclone/obsidian.sh
+rclone copy -P $HOME/Obsidian/ mega:Obsidian
+rclone copy /mnt/torrent1/torrent/ mega:torrent
