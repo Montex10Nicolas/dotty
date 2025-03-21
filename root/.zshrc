@@ -24,6 +24,8 @@ export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:/opt/nvim-linux-x86_64/bin
 export PATH=$PATH:/usr/bin/cmake
 export FLATPAK_DIR="/var/lib/flatpak/app"
+export PATH="$HOME/.tmuxifier/bin:$PATH"
+export EDITOR="nvim"
 
 export PNPM_HOME="/home/nicolas/.local/share/pnpm"
 case ":$PATH:" in
@@ -44,5 +46,6 @@ alias find="fdfind"
 source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+eval "$(tmuxifier init -)"
 
 set -o vi
