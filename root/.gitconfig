@@ -18,5 +18,5 @@
 [pager]
 	log = false
 	reflog = false
-	diff = false
+	diff = true
 	branch = false
