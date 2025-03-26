@@ -20,3 +20,5 @@
 	reflog = false
 	diff = true
 	branch = false
+[color]
+	ui = auto

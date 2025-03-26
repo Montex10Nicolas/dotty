@@ -23,8 +23,9 @@ export PATH=$PATH:$HOME/go/bin
 
 export PATH=$PATH:/opt/nvim-linux-x86_64/bin
 export PATH=$PATH:/usr/bin/cmake
-export FLATPAK_DIR="/var/lib/flatpak/app"
 export PATH="$HOME/.tmuxifier/bin:$PATH"
+export PATH="$HOME/Applications/android-studio/bin:$PATH"
+export FLATPAK_DIR="/var/lib/flatpak/app"
 export EDITOR="nvim"
 
 export PNPM_HOME="/home/nicolas/.local/share/pnpm"
@@ -43,9 +44,15 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias grep="rg"
 alias ls="eza"
 alias find="fdfind"
+alias docker="echo 'use podman 시발'"
+alias grayjay="$HOME/Applications/Grayjay.Desktop-linux-x64-v5/Grayjay"
+
 source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 eval "$(tmuxifier init -)"
 
 set -o vi
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
