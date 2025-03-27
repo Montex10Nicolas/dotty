@@ -24,6 +24,7 @@ packageArray=(
   "vim"
   "solaar"
   "nemo"
+  "font-manager"
 )
 
 packages=""
