@@ -6,3 +6,4 @@ if ! command -v tmux 2>&1 > /dev/null; then
 fi
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone https://github.com/jimeh/tmuxifier.git ~/.tmuxifier

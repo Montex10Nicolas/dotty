@@ -25,6 +25,7 @@ packageArray=(
   "solaar"
   "nemo"
   "font-manager"
+  "tmux"
 )
 
 packages=""
