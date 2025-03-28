@@ -1,0 +1,10 @@
+[Unit]
+Description=Split Tunnel for Mullvad VPN
+After=network-online.target
+
+[Service]
+ExecStart=/home/nicolas/scripts/vpn/split_tunnel.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

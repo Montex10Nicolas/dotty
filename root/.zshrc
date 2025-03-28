@@ -20,9 +20,9 @@ fi
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/go/bin
-
 export PATH=$PATH:/opt/nvim-linux-x86_64/bin
 export PATH=$PATH:/usr/bin/cmake
+
 export PATH="$HOME/.tmuxifier/bin:$PATH"
 export PATH="$HOME/Applications/android-studio/bin:$PATH"
 export FLATPAK_DIR="/var/lib/flatpak/app"
