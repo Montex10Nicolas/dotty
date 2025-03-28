@@ -50,7 +50,7 @@ sudo apt update && sudo apt install librewolf -y
 
 # Rclone 
 wget https://downloads.rclone.org/v1.69.1/rclone-v1.69.1-linux-amd64.deb
-sudo apt dpkg -i ./rclone-v1.69.1-linux-amd64.deb
+sudo dpkg -i ./rclone-v1.69.1-linux-amd64.deb
 rm -rf rclone-v1.69.1-linux-amd64.deb
 
 # Signal
@@ -75,5 +75,15 @@ gsettings set org.cinnamon.desktop.default-applications.terminal exec ghostty
 
 # Show password as ***
 echo -e "Defaults\tpwfeedback" | sudo tee -a /etc/sudoers.d/0pwfeedback
+
+# Download the Mullvad signing key
+sudo curl -fsSLo /usr/share/keyrings/mullvad-keyring.asc https://repository.mullvad.net/deb/mullvad-keyring.asc
+
+# Add the Mullvad repository server to apt
+echo "deb [signed-by=/usr/share/keyrings/mullvad-keyring.asc arch=$( dpkg --print-architecture )] https://repository.mullvad.net/deb/stable $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/mullvad.list
+
+# Install the package
+sudo apt update
+sudo apt install mullvad-vpn
 
 echo "Run 'nvm install node'"

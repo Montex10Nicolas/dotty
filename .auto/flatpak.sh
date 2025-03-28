@@ -16,5 +16,6 @@ flatpak install -y app.zen_browser.zen
 flatpak install -y com.valvesoftware.Steam
 flatpak install -y net.lutris.Lutris
 flatpak install -y com.heroicgameslauncher.hgl
+flatpak install -y com.mattjakeman.ExtensionManager
 
 echo "Make sure to reboot to change the update the system"
