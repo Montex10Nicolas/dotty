@@ -1,0 +1,4 @@
+budget.localhost {
+    encode gzip zstd
+    reverse_proxy actual_server:5006
+}

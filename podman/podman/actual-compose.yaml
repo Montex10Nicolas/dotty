@@ -1,0 +1,20 @@
+services:
+  caddy:
+      container_name: caddy
+      image: docker.io/caddy:alpine
+      volumes:
+        - ./Caddyfile:/etc/caddy/Caddyfile:ro
+        - ./caddy/data:/data
+        - ./caddy/config:/config
+      ports:
+        - "80:80"
+        - '443:443'
+
+  actual-server:
+    image: docker.io/actualbudget/actual-server:latest
+    container_name: actual_server
+    restart: unless-stopped
+    ports:
+      - '5006:5006'
+    volumes:
+      - $HOME/actualbudget/:/data
