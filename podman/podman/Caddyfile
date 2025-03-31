@@ -1,4 +1,4 @@
-budget.localhost {
+budget.localhost, https://10.89.0.6:9123, localhost:9123, https://192.168.1.23:9123 {
     encode gzip zstd
-    reverse_proxy actual_server:5006
+    reverse_proxy 192.168.1.23:5006
 }
