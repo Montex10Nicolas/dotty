@@ -22,3 +22,5 @@
 	branch = false
 [color]
 	ui = auto
+[credential]
+	helper = store
