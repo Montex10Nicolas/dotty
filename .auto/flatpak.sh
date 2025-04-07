@@ -17,5 +17,11 @@ flatpak install -y com.valvesoftware.Steam
 flatpak install -y net.lutris.Lutris
 flatpak install -y com.heroicgameslauncher.hgl
 flatpak install -y com.mattjakeman.ExtensionManager
+flatpak install -y com.discordapp.Discord
+flatpak install -y dev.vencord.Vesktop
+flatpak install -y com.github.scrivanolabs.scrivano
+flatpak install -y io.mpv.Mpv
+
+sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"
 
 echo "Make sure to reboot to change the update the system"
