@@ -14,6 +14,7 @@ packageArray=(
   "tlrc"
   "qbittorrent"
   "podman"
+  "podman-compose"
   "flatpak"
   "gnome-software-plugin-flatpak"
   "make"
