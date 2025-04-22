@@ -8,6 +8,10 @@ fi
 
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
+flatpak install -y com.bitwarden.desktop
+faltpak install -y com.chatterino.chatterino
+faltpak install -y com.github.iwalton3.jellyfin-media-player
+faltpak install -y com.spotify.Client
 flatpak install -y md.obsidian.Obsidian
 flatpak install -y org.telegram.desktop
 flatpak install -y io.missioncenter.MissionCenter
@@ -21,6 +25,8 @@ flatpak install -y com.discordapp.Discord
 flatpak install -y dev.vencord.Vesktop
 flatpak install -y com.github.scrivanolabs.scrivano
 flatpak install -y io.mpv.Mpv
+flatpak install -y no.mifi.losslesscut
+flatpak install -y org.kde.kdenlive
 
 sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"
 

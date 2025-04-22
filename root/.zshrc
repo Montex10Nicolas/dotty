@@ -13,7 +13,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
- if [[ -n $SSH_CONNECTION ]]; then
+if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='vim'
 fi
 
@@ -22,6 +22,7 @@ export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:/opt/nvim-linux-x86_64/bin
 export PATH=$PATH:/usr/bin/cmake
+export PATH=$PATH:/usr/local/go/bin
 export PATH="$HOME/.tmuxifier/bin:$PATH"
 export PATH="$HOME/Applications/android-studio/bin:$PATH"
 export PATH="~/.config/emacs/bin:$PATH"
@@ -39,7 +40,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-
 alias auu="sudo apt update && sudo apt upgrade"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias grep="rg"
@@ -52,8 +52,6 @@ source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 eval "$(tmuxifier init -)"
-
-set -o vi
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
