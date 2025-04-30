@@ -20,11 +20,10 @@ flatpak install -y com.mattjakeman.ExtensionManager
 faltpak install -y com.spotify.Client
 flatpak install -y com.valvesoftware.Stea
 
-
 flatpak install -y dev.vencord.Vesktop
+
 flatpak install -y io.missioncenter.MissionCenter
 flatpak install -y io.mpv.Mpv
-flatpak install -y io.gitlab.librewolf-community
 
 flatpak install -y md.obsidian.Obsidian
 

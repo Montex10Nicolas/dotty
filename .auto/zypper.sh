@@ -4,13 +4,16 @@ packageArray=(
     curl
     eza
     font-manager
+    findutils-locate
     gcc
     ghostty
     gh
     lutris
     make
+    MozillaThunderbird
     nemo
     neovim
+    opi
     podman
     pv
     qbittorrent
