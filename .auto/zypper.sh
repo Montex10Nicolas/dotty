@@ -20,6 +20,7 @@ packageArray=(
     rclone
     ripgrep
     solaar
+    spotify-launcher
     stow
     tmux
     tlrc
