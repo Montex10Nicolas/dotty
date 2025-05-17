@@ -1,6 +1,5 @@
 #!/bin/bash
-rclone copy -P $HOME/Obsidian/ mega:Obsidian
+rclone copy -P -L /home/jumong/Obsidian/ mega:Obsidian
 rclone copy /mnt/torrent1/torrent/ mega:torrent
-rclone copy -P $HOME/actualbudget/ mega:actualbudget
-rclone copy -P $HOME/Pictures/ mega:Picture
-rclone copy -P $HOME/Documents/ mega:Documents
+rclone copy -P /home/jumong/Pictures/ mega:Picture
+rclone copy -P /home/jumong/Documents/ mega:Documents

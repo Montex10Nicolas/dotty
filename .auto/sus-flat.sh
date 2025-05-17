@@ -14,7 +14,6 @@ flatpak install -y com.bitwarden.desktop
 faltpak install -y com.chatterino.chatterino
 flatpak install -y com.discordapp.Discord
 faltpak install -y com.github.iwalton3.jellyfin-media-player
-flatpak install -y com.github.scrivanolabs.scrivano
 flatpak install -y com.heroicgameslauncher.hgl
 flatpak install -y com.mattjakeman.ExtensionManager
 faltpak install -y com.spotify.Client
