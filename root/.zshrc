@@ -14,14 +14,17 @@ export PATH=$PATH:/opt/nvim-linux-x86_64/bin
 export PATH=$PATH:/usr/bin/cmake
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/home/jumong/.bun/bin
+export PATH="~/.config/emacs/bin:$PATH"
 export PATH="$HOME/.tmuxifier/bin:$PATH"
 export PATH="$HOME/Applications/android-studio/bin:$PATH"
-export PATH="~/.config/emacs/bin:$PATH"
 
+export BUN_INSTALL="$HOME/.bun"
 export FLATPAK_DIR="/var/lib/flatpak/app"
 export EDITOR="nvim"
+export WINEPREFIX="$HOME/.wine"
 
-export PNPM_HOME="/home/nicolas/.local/share/pnpm"
+
+export PNPM_HOME="~/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
