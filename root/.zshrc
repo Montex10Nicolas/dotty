@@ -13,12 +13,14 @@ export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:/opt/nvim-linux-x86_64/bin
 export PATH=$PATH:/usr/bin/cmake
 export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:/home/jumong/.bun/bin
 export PATH="~/.config/emacs/bin:$PATH"
 export PATH="$HOME/.tmuxifier/bin:$PATH"
 export PATH="$HOME/Applications/android-studio/bin:$PATH"
 
+# bun
+export PATH=$PATH:/home/joyoung/.bun/bin
 export BUN_INSTALL="$HOME/.bun"
+
 export FLATPAK_DIR="/var/lib/flatpak/app"
 export EDITOR="nvim"
 export WINEPREFIX="$HOME/.wine"
