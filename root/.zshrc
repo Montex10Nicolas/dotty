@@ -43,7 +43,7 @@ alias grep="rg"
 alias ls="eza"
 alias find="fdfind"
 alias docker="echo 'use podman 시발'"
-
+alias obiwankenoby="bash ~/scripts/random/obinskit.sh"
 
 eval "$(tmuxifier init -)"
 
