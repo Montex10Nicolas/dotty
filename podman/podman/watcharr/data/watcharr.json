@@ -1,0 +1,17 @@
+{
+	"JWT_SECRET": "au1IeyX5g2L3ocUA7LQEN74eXb1XhiiJC2GfwfbKb4rsWSnWPpzW/ewPxox9LoLD8lS18y1jWUT2q1UFv1rJPg==",
+	"DEFAULT_COUNTRY": "IT",
+	"USE_EMBY": false,
+	"SIGNUP_ENABLED": true,
+	"TMDB_KEY": "656a815e401e2b6140293cfccced27d6",
+	"HEADER_AUTH": {
+		"enabled": false,
+		"headerName": "",
+		"autoLogin": false,
+		"logoutUrl": ""
+	},
+	"TWITCH": {
+		"accessTokenExpires": "0001-01-01T00:00:00Z"
+	},
+	"DEBUG": true
+}
