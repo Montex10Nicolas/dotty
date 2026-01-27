@@ -1,0 +1,6 @@
+# In Wanting to stow from /home/me/Videos the folder CatVideos in /mnt/external
+/home/me/Videos
+CatVideos/,/mnt/external
+
+# First row is the location of the folder to stow
+# Second row is first argument the folder in question and second argument the destination
