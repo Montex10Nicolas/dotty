@@ -1,6 +1,6 @@
 #!/bin/bash
 
-log="log.txt"
+log="$HOME/log.txt"
 touch "${log}"
 echo "Program starts at $(date -u +%Y-%m-%d" "%H:%M:%S)" >>"${log}"
 
