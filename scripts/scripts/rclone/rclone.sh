@@ -23,3 +23,6 @@ echo "Mangas"
 rclone copy -P -L -c ~/Documents/Mangas/ /mnt/external/RClone/Mangas/
 rclone copy -P -L -c ~/Documents/MangaRead/ /mnt/external/RClone/Mangas/
 printf "Mangas done\n\n"
+
+# Watcharr
+rclone copy -P -L -c ~/Watcharr mega:Watcharr
