@@ -4,7 +4,7 @@ log="$HOME/log.txt"
 touch "${log}"
 echo "Program starts at $(date -u +%Y-%m-%d" "%H:%M:%S)" >>"${log}"
 
-FILE="./file.txt"
+FILE="$HOME/scripts/qbittorrent/file.txt"
 needToCd=0
 while read -r LINE; do
   if [ "$LINE" = "" ]; then

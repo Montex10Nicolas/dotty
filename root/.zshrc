@@ -43,9 +43,9 @@ alias sus="sudo zypper refresh && sudo zypper up"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias grep="rg"
 alias ls="eza"
-alias find="fdfind"
 alias docker="echo 'use podman 시발'"
 alias obiwankenoby="bash ~/scripts/random/obinskit.sh"
+alias stowall='sh -c "$HOME/scripts/qbittorrent/stowall.sh"; sh -c "$HOME/Jellyfin\ Server\ Media/cleanup.sh"'
 
 eval "$(tmuxifier init -)"
 
@@ -67,3 +67,5 @@ source $ZSH/oh-my-zsh.sh
 source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 . "/home/joyoung/.deno/env"
+
+. "$HOME/.local/bin/env"
