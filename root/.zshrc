@@ -46,6 +46,7 @@ alias ls="eza"
 alias docker="echo 'use podman 시발'"
 alias obiwankenoby="bash ~/scripts/random/obinskit.sh"
 alias stowall='sh -c "$HOME/scripts/qbittorrent/stowall.sh"; sh -c "$HOME/Jellyfin\ Server\ Media/cleanup.sh"'
+alias nodedel='find . -type d -name "node_modules" -print -exec rm -rf {} + -depth'
 
 eval "$(tmuxifier init -)"
 
