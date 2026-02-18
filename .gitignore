@@ -1,5 +1,6 @@
 podman/podman/caddy/
 scripts/scripts/qbittorrent/file.txt
+scripts/scripts/qbittorrent/file.json
 scripts/scripts/qbittorrent/log.txt
 scripts/scripts/qbittorrent/log.txt
 

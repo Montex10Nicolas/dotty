@@ -70,3 +70,6 @@ source $ZSH/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 . "/home/joyoung/.deno/env"
 
 . "$HOME/.local/bin/env"
+
+# bun completions
+[ -s "/home/joyoung/.bun/_bun" ] && source "/home/joyoung/.bun/_bun"

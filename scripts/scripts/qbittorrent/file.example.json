@@ -1,0 +1,11 @@
+[
+  {
+    "cd": "/path/where/the/folder/is",
+    "targets": [
+      {
+        "target": "path/to/be/linked/to",
+        "directory": "directory/to/be/linked"
+      }
+    ]
+  }
+]

@@ -1,24 +1,24 @@
 #!/bin/bash
 
-log="$HOME/log.txt"
-touch "${log}"
-echo "Program starts at $(date -u +%Y-%m-%d" "%H:%M:%S)" >>"${log}"
+data=$(cat ./file.json | jq)
+len=$(echo "$data" | jq 'length')
 
-FILE="$HOME/scripts/qbittorrent/file.txt"
-needToCd=0
-while read -r LINE; do
-  if [ "$LINE" = "" ]; then
-    needToCd=1
-  else
-    if [ "$needToCd" = 1 ]; then
-      needToCd=0
-      cd "$LINE"
-    else
-      IFS=',' read -ra values <<<"$LINE"
-      stow -v -t "${values[1]}" "${values[0]}" &>>"$log"
-    fi
-  fi
-done <"$FILE"
+echo "len: $len"
 
-printf "Program ends at %s\n\n" "$(date -u +%Y-%m-%d" "%H:%M:%S)" >>"${log}"
-exit
+for ((i = 0; c < len; c++)); do
+  curr=$(echo "$data" | jq ".[$i]")
+  cd=$(echo "$curr" | jq -r '.cd')
+
+  cd "$cd" || return
+
+  targets=$(echo "$curr" | jq '.targets')
+  tlen=$(echo "$targets" | jq "length")
+
+  for ((j = 0; j < tlen; j++)); do
+    tcurr=$(echo "$targets" | jq ".[$j]")
+    target=$(echo "$tcurr" | jq -r '.target')
+    directory=$(echo "$tcurr" | jq -r '.directory')
+
+    stow -v -t "$target" "$directory"
+  done
+done
