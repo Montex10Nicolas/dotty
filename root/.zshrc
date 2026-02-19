@@ -47,6 +47,7 @@ alias docker="echo 'use podman 시발'"
 alias obiwankenoby="bash ~/scripts/random/obinskit.sh"
 alias stowall='sh -c "$HOME/scripts/qbittorrent/stowall.sh"; sh -c "$HOME/Jellyfin\ Server\ Media/cleanup.sh"'
 alias nodedel='find . -type d -name "node_modules" -print -exec rm -rf {} + -depth'
+alias downloadplaylist="yt-dlp --cookies-from-browser firefox --write-subs --sub-langs en --no-overwrites --embed-subs $1"
 
 eval "$(tmuxifier init -)"
 
