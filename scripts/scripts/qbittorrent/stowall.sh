@@ -3,8 +3,6 @@
 data=$(cat ./file.json | jq)
 len=$(echo "$data" | jq 'length')
 
-echo "len: $len"
-
 for ((i = 0; c < len; c++)); do
   curr=$(echo "$data" | jq ".[$i]")
   cd=$(echo "$curr" | jq -r '.cd')
