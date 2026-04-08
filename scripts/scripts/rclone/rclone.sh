@@ -10,6 +10,11 @@ rclone copy -P -L /home/joyoung/Obsidian/ mega:Obsidian
 echo "Torrent Mega"
 rclone copy -P -L /mnt/torrent1/torrent/ mega:torrent
 
+# Games
+echo "Games"
+rclone copy -P -L '/home/joyoung/Documents/My Games/' mega:Games
+rclone copy -P -L '/home/joyoung/Documents/Saved Games/' mega:Games
+
 # Watcharr
 echo "Watcharr Mega"
 rclone copy -P -L -c ~/Watcharr mega:Watcharr
