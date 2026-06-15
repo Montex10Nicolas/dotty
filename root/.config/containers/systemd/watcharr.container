@@ -6,12 +6,12 @@ PublishPort=7000:3080
 
 Environment=TZ=Europe/Amsterdam
 
-Mount=type=bind,src=/home/joyoung/Watcharr/data,destination=/data
+Mount=type=bind,src=/home/jumong/Watcharr/data,destination=/data
 
 AutoUpdate=registry
 
 [Service]
-Restart=unless-stopped
+#Restart=unless-stopped
 
 [Install]
 WantedBy=default.target

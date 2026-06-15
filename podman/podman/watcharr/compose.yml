@@ -8,5 +8,5 @@ services:
       - 3080:3080
     volumes:
       # Contains all of watcharr data (database & cache)
-      - ~/Watcharr/data:/data
-    restart: unless-stopped
+      - ~/Watcharr/data:/data:z
+    #restart: unless-stopped

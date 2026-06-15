@@ -1,1 +1,3 @@
-rclone copy $HOME/podman mega:podamn 
+#!/bin/bash
+
+rclone copy $HOME/podman mega:podamn

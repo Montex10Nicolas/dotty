@@ -1,5 +1,5 @@
 # Add deno completions to search path
-if [[ ":$FPATH:" != *":/home/joyoung/.zsh/completions:"* ]]; then export FPATH="/home/joyoung/.zsh/completions:$FPATH"; fi
+if [[ ":$FPATH:" != *":/home/jumong/.zsh/completions:"* ]]; then export FPATH="/home/jumong/.zsh/completions:$FPATH"; fi
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -20,7 +20,7 @@ export PATH="$HOME/.tmuxifier/bin:$PATH"
 export PATH="$HOME/Applications/android-studio/bin:$PATH"
 
 # bun
-export PATH=$PATH:/home/joyoung/.bun/bin
+export PATH=$PATH:/home/jumong/.bun/bin
 export BUN_INSTALL="$HOME/.bun"
 
 export FLATPAK_DIR="/var/lib/flatpak/app"
@@ -48,6 +48,7 @@ alias obiwankenoby="bash ~/scripts/random/obinskit.sh"
 alias stowall='sh -c "$HOME/scripts/qbittorrent/stowall.sh"; sh -c "$HOME/Jellyfin\ Server\ Media/cleanup.sh"'
 alias nodedel='find . -type d -name "node_modules" -print -exec rm -rf {} + -depth'
 alias downloadplaylist="yt-dlp --cookies-from-browser firefox --write-subs --sub-langs en --no-overwrites --embed-subs $1"
+alias obinskit="sudo /opt/ObinsKit/obinskit --no-sandbox"
 
 eval "$(tmuxifier init -)"
 
@@ -68,9 +69,6 @@ source $ZSH/oh-my-zsh.sh
 
 source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-. "/home/joyoung/.deno/env"
-
-. "$HOME/.local/bin/env"
 
 # bun completions
-[ -s "/home/joyoung/.bun/_bun" ] && source "/home/joyoung/.bun/_bun"
+[ -s "/home/jumong/.bun/_bun" ] && source "/home/jumong/.bun/_bun"

@@ -6,14 +6,14 @@
 
 # MEGA
 echo "Obsidian Mega"
-rclone copy -P -L /home/joyoung/Obsidian/ mega:Obsidian
+rclone copy -P -L /home/jumong/Obsidian/ mega:Obsidian
 echo "Torrent Mega"
 rclone copy -P -L /mnt/torrent1/torrent/ mega:torrent
 
 # Games
 echo "Games"
-rclone copy -P -L '/home/joyoung/Documents/My Games/' mega:Games
-rclone copy -P -L '/home/joyoung/Documents/Saved Games/' mega:Games
+rclone copy -P -L '/home/jumong/Documents/My Games/' mega:Games
+rclone copy -P -L '/home/jumong/Documents/Saved Games/' mega:Games
 
 # Watcharr
 echo "Watcharr Mega"
