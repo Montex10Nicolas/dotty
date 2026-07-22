@@ -6,7 +6,7 @@
 
 # MEGA
 echo "Obsidian Mega"
-rclone copy -P -L /home/jumong/Obsidian/ mega:Obsidian
+rclone copy -P -L /home/jumong/Documents/Obsidian/ mega:Obsidian
 echo "Torrent Mega"
 rclone copy -P -L /mnt/torrent1/torrent/ mega:torrent
 
